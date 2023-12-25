@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <section class="side">
+        <img src="" alt="logo">
+    </section>
+
+    <section class="main">
+        <div class="login-container">
+            <p class="title">Login</p>
+            
+            <p class="message">Welcome to Acdamate Please login to your account</p>
+
+            <form class="Login-form">
+                <div class="form-control" id="keys">
+                    <label for="email" id="label-email" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()">College Id</label>
+                    <input type="email" id="email" placeholder="id@pvppcoe.ac.in"/>
+                </div>
+                <div class="form-control">
+                    <label for="password" id="label-password">Password</label>
+                    <input type="password" id="label-password" placeholder="password"/>
+                </div>
+                <button class="submit" value="submit" id="again">Login</button>
+                
+                <!-- 
+                    1. First way of writing event     
+                        inline event               
+                    onclick="alert('Please fill the form first, Holy Shit ! 
+                
+                    2. Second way of writing and most commmonly used :
+                        function call 
+                    onclick = "function()"
+                    eg: onclick="callme()"
+
+                    <script>
+                        const callme = () =>{
+                            alert("Holy SHit, Jian Yang!");
+                        }
+                    </script>
+
+                    3. Third way of writing function is by using reference
+                        using document.getElementById(Id name)
+                        widely used
+
+                        Disadvantage: It mmay override event, if it called multiple times
+                        it uses top bottom approach
+                        so it will execute bottomm call 
+
+                    id="unique"
+                        <script>
+                            const unique = document.getElementById('unique');
+
+                            unique.onclick = function(){
+                                alert('Okay ! So you are telling me to do it over again ?');
+                                alert('Holy Blimey, Get OFF!');
+                            } 
+                        </script>
+
+                    4. Fourth way of writing function/event
+                        by using addEventListener---- 3 parameters , (event like click onclick
+                        , function, boolean value)
+
+                        Advantages: Using addEventListener , we can call same event multiple times
+                        no worry about event overriding as in case normal function referring to id
+                        i.e. it is better than 3rd way of writing functions/events
+
+                        id="again"
+                        <script>
+                            const again=document.querySelector('#again');
+
+                            again.addEventListener('click', ()=>{
+                                alert('Up Here ! Nice to see you again . ');
+                            })
+                        </script>
+
+                    
+                
+                -->
+
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const again=document.querySelector('#again');
+
+        const checkEvent =()=>{
+            alert('Hello Boy Yo!');
+            console.log(event);
+            console.log(event.target);
+            console.log(event.type);
+        }
+
+        again.addEventListener('click',checkEvent);
+    </script>
+
+    <script>
+        const keyPress=()=>{
+            document.getElementById('keys').innerHTML=`you pressed ${event.key} and its code ${event.code}`;
+        }
+    </script>
+
+     <!-- call back function means ,  passing one function in the argument of another function  -->
+  
+</body>
+</html>

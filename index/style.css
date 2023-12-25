@@ -1,0 +1,40 @@
+body{
+    background-image: url("bg.jpg");
+}
+
+header{
+    /* border: 2px solid white; */
+    position: sticky;
+}
+
+.logo{
+    border:2px solid black;
+    display: inline-block;
+    width: 150px;
+    padding: 2px;
+    color: blueviolet;
+    background-color: azure;
+    
+}
+
+.navbar{
+    border: 2px solid black;
+    display: inline-block;
+    width:1000px;
+    padding: 2px;
+    right: 18px;
+    position: absolute;
+    
+    background-color:blueviolet ;
+}
+
+.navbar>a{
+    margin:8% ;
+    text-decoration: none;
+    color:  azure;
+}
+
+.navbar>a:hover{
+    color: black;
+    transition: 0.5s;
+}

@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "title": "Tanhaji",
+      "summary": "lorem ipsum...",
+      "director": "Om Raut",
+      "id": 1
+    },
+    {
+      "title": "Avatar : The way of water",
+      "summary": "lorem ipsum...",
+      "director": "James Cameron",
+      "id": 3
+    },
+    {
+      "title": "Pussboots",
+      "summary": "lorem ipsum...",
+      "director": "Pixar",
+      "id": 4
+    },
+    {
+      "title": "Silicon Valley",
+      "summary": "lorem ipsum...",
+      "director": "HBO",
+      "id": 5
+    },
+    {
+      "title": "Avatar 3",
+      "summary": "Third movie of Avatar franchise, following the story of previous prequels of this multi-billion dollars franchise.",
+      "director": "James Cameron",
+      "id": 6
+    },
+    {
+      "title": "Fast X",
+      "summary": "10th movie of Fast & Furious franchise",
+      "director": "IDK",
+      "id": 7
+    }
+  ]
+}
